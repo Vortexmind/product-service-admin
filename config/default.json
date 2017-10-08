@@ -1,0 +1,5 @@
+{
+  "Api" : {
+    "baseUrl" : "http(s)://HOST:PORT"
+  }
+}

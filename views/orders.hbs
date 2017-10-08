@@ -1,0 +1,15 @@
+<h1>{{title}}</h1>
+<p>{{title}}</p>
+<p>Order Summaries Report for {{user}}!</p>
+<ul class="order_summaries">
+  {{#each items}}
+  <li>
+    <ul>
+      <li><a href="/orders/id/{{this.productId}}/summary"><strong>Product Id</strong>: {{this.productId}}</a></li>
+      <li><strong>Total Quantity</strong>: {{this.totalQuantity}} units</li>
+      <li><strong>Total Value</strong>: <em>{{this.totalAmount}} EUR</em> </li>
+    </ul>
+  </li>
+  {{/each}}
+</ul>
+<a href="/">Homepage</a>
